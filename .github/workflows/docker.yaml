@@ -1,0 +1,35 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Pull submodules
+        run: git submodule update --init --recursive
+
+      - name: Build OpenedX
+        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:${GITHUB_SHA} --target base
+
+      - name: Build Static files for OpenedX S3
+        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${GITHUB_SHA} --target s3
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: eol-vl
+          password: ${{ secrets.CR_PAT }}
+
+      - name: Push
+        run: |
+          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:${GITHUB_SHA}
+          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${GITHUB_SHA}
+

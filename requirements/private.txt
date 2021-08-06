@@ -1,2 +1,2 @@
--e git+https://github.com/eol-virtuallabx/eol_certificate_virtual@5cdb4f1ef4eda4b373b90fd3817a96faade3dedc#egg=eol_certificate_virtual
+-e git+https://github.com/eol-virtuallabx/eol_certificate_virtual@63ce5b2f28a1860fee8f05309e654dbc44bf4e48#egg=eol_certificate_virtual
 -e git+https://github.com/eol-virtuallabx/eol_custom_reg_form@fbdd4e76ff21bc161cd094188fc9a34ca2a92853#egg=eol_custom_reg_form

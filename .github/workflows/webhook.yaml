@@ -1,0 +1,13 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger upload only on the correct branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          curl -XPOST -u "eol-vl:${{ secrets.CR_PAT }}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/eol-virtuallabx/edx-argocd/dispatches --data '{"event_type": "update-images", "client_payload": {"type": "virtuallabx"}}'

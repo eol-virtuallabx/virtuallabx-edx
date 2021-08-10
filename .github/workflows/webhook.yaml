@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: ArgoCD CI webhook
 
 on: [push]
 

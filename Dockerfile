@@ -21,3 +21,4 @@ RUN openedx-assets themes \
 FROM rclone/rclone:1.53 as s3
 
 COPY --from=base /openedx/staticfiles /data
+

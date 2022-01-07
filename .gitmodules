@@ -4,6 +4,3 @@
 [submodule "themes/virtual-labx"]
 	path = themes/virtual-labx
 	url = https://github.com/eol-virtuallabx/virtual-labx-theme.git
-[submodule "themes/norteamericano-theme"]
-	path = themes/norteamericano-theme
-	url = https://github.com/eol-virtuallabx/norteamericano-theme.git

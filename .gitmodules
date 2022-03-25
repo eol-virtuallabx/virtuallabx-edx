@@ -7,3 +7,6 @@
 [submodule "themes/norteamericano-theme"]
 	path = themes/norteamericano-theme
 	url = https://github.com/eol-virtuallabx/norteamericano-theme.git
+[submodule "themes/jcpp-theme"]
+	path = themes/jcpp-theme
+	url = https://github.com/eol-virtuallabx/jcpp-theme.git

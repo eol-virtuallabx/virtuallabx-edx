@@ -3,3 +3,4 @@
 -e git+https://github.com/eol-virtuallabx/eol_duplicate_xblock@bdd3f406521cb028c142eb29e6c3c9c6433bba49#egg=eol_duplicate_xblock
 -e git+https://github.com/eol-virtuallabx/edx_xblock_scorm@af72761ad08d5570e85d35d3ed7908618e707dac#egg=edx_xblock_scorm
 -e git+https://github.com/eol-virtuallabx/norteamericano-zoom-xblock@c73b31de9236df3aa01aa79e17c2d94ce52da91e#egg=norteamericano-zoom-xblock
+-e git+https://github.com/eol-uchile/eol_completion@328e26416428cf1b551ccac256fb60194c030487#egg=eol_completion

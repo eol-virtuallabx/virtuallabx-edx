@@ -6,3 +6,4 @@
 -e git+https://github.com/eol-virtuallabx/eol_completion@398c4ae918f0601a72911f910caaa8cb89e2cb5c#egg=eol_completion
 -e git+https://github.com/eol-virtuallabx/eol_list_grade@0d7688919bad8b229bff2948f31fedd76f1029d2#egg=eol_list_grade
 -e git+https://github.com/eol-virtuallabx/course-program-xblock@452b62a63424cd3fbde4852a2aeadaf70371c1b7#egg=course-program-xblock
+-e git+https://github.com/eol-virtuallabx/welcome_mail@4b45fdf9f16c0d8597656ab8e6b7f3f1a7b65524#egg=welcome_mail

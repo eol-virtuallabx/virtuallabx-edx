@@ -1,9 +1,0 @@
--e git+https://github.com/eol-virtuallabx/eol_certificate_virtual@34ae1221e2887948fcb8e01f9536dce184537a6c#egg=eol_certificate_virtual
--e git+https://github.com/eol-virtuallabx/eol_custom_reg_form@bcc9233281392e916c789a6e244c933b928bf42b#egg=eol_custom_reg_form
--e git+https://github.com/eol-virtuallabx/eol_duplicate_xblock@bdd3f406521cb028c142eb29e6c3c9c6433bba49#egg=eol_duplicate_xblock
--e git+https://github.com/eol-virtuallabx/edx_xblock_scorm@af72761ad08d5570e85d35d3ed7908618e707dac#egg=edx_xblock_scorm
--e git+https://github.com/eol-virtuallabx/norteamericano-zoom-xblock@64b94dc6096689bc5e196d9a7cc4fd078a748b60#egg=norteamericano-zoom-xblock
--e git+https://github.com/eol-virtuallabx/eol_completion@398c4ae918f0601a72911f910caaa8cb89e2cb5c#egg=eol_completion
--e git+https://github.com/eol-virtuallabx/eol_list_grade@0d7688919bad8b229bff2948f31fedd76f1029d2#egg=eol_list_grade
--e git+https://github.com/eol-virtuallabx/course-program-xblock@452b62a63424cd3fbde4852a2aeadaf70371c1b7#egg=course-program-xblock
--e git+https://github.com/eol-uchile/eol_welcome_mail@d45ed6908eac47bc615c5206572ecdea4d86adc5#egg=eol_welcome_mail

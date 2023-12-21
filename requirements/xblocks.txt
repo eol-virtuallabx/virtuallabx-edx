@@ -1,0 +1,4 @@
+-e git+https://github.com/eol-virtuallabx/eol_list_grade@0d7688919bad8b229bff2948f31fedd76f1029d2#egg=eol_list_grade
+-e git+https://github.com/eol-virtuallabx/course-program-xblock@452b62a63424cd3fbde4852a2aeadaf70371c1b7#egg=course-program-xblock
+-e git+https://github.com/eol-virtuallabx/edx_xblock_scorm@af72761ad08d5570e85d35d3ed7908618e707dac#egg=edx_xblock_scorm
+-e git+https://github.com/eol-virtuallabx/norteamericano-zoom-xblock@64b94dc6096689bc5e196d9a7cc4fd078a748b60#egg=norteamericano-zoom-xblock

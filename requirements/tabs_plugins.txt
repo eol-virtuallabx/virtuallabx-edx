@@ -1,0 +1,2 @@
+-e git+https://github.com/eol-virtuallabx/eol_completion@398c4ae918f0601a72911f910caaa8cb89e2cb5c#egg=eol_completion
+-e git+https://github.com/eol-uchile/eol_welcome_mail@d45ed6908eac47bc615c5206572ecdea4d86adc5#egg=eol_welcome_mail

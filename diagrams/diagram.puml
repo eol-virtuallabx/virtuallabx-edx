@@ -1,0 +1,74 @@
+@startuml
+
+!define C4Container https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include C4Container
+
+skinparam svgLinkTarget foo
+
+System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/eol-virtuallabx/virtuallabx-edx") {
+    System_Boundary(c2, "requirements", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/") {
+        
+            System_Boundary(apis, "apis", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/apis.txt") {
+            
+            }
+        
+            System_Boundary(apps, "apps", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/apps.txt") {
+            
+                Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form")
+            
+                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-virtuallabx/eol_duplicate_xblock")
+            
+                Container(apps3, "eol_certificate_virtual", $link="https://github.com/eol-virtuallabx/eol_certificate_virtual")
+            
+            }
+        
+            System_Boundary(python_packages, "python_packages", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/python_packages.txt") {
+            
+            }
+        
+            System_Boundary(reports, "reports", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/reports.txt") {
+            
+            }
+        
+            System_Boundary(tabs_plugins, "tabs_plugins", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/tabs_plugins.txt") {
+            
+                Container(tabs_plugins1, "eol_completion", $link="https://github.com/eol-virtuallabx/eol_completion")
+            
+                Container(tabs_plugins2, "eol_welcome_mail", $link="https://github.com/eol-uchile/eol_welcome_mail")
+            
+            }
+        
+            System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/xblocks.txt") {
+            
+                Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-virtuallabx/eol_list_grade")
+            
+                Container(xblocks2, "course-program-xblock", $link="https://github.com/eol-virtuallabx/course-program-xblock")
+            
+                Container(xblocks3, "edx_xblock_scorm", $link="https://github.com/eol-virtuallabx/edx_xblock_scorm")
+            
+                Container(xblocks4, "norteamericano-zoom-xblock", $link="https://github.com/eol-virtuallabx/norteamericano-zoom-xblock")
+            
+            }
+        
+    }
+
+    System_Boundary(theme, "Themes", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/themes/") {
+        
+            Container(theme1, "jcpp-theme", $link="https://github.com/eol-virtuallabx/jcpp-theme.git")
+        
+            Container(theme2, "norteamericano-theme", $link="https://github.com/eol-virtuallabx/norteamericano-theme.git")
+        
+            Container(theme3, "virtual-labx", $link="https://github.com/eol-virtuallabx/virtual-labx-theme.git")
+        
+            Container(theme4, "virtual-labx-cla", $link="https://github.com/eol-virtuallabx/virtual-labx-cla-theme.git")
+        
+    }
+
+    System_Boundary(dockerfile, "edx-platform base", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/Dockerfile") {
+            Container(dk, "koa", $link="https://ghcr.io/eol-virtuallabx/edx-platform:koa")
+    }
+}
+
+SHOW_LEGEND()
+
+@enduml

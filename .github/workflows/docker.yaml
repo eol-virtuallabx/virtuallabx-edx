@@ -3,8 +3,7 @@ name: Docker Image CI
 on:
   push:
     branches:
-      - staging
-      - trying
+      - main
 
 jobs:
   build:

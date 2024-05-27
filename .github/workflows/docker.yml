@@ -9,7 +9,7 @@ on:
       - reopened
       - synchronize
     branches:
-      - virtuallabx-release/**
+      - 'virtuallabx-release/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

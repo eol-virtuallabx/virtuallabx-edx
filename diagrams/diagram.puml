@@ -6,13 +6,13 @@
 skinparam svgLinkTarget foo
 
 System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/eol-virtuallabx/virtuallabx-edx") {
-    System_Boundary(c2, "requirements", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/") {
+    System_Boundary(c2, "requirements", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/") {
         
-            System_Boundary(apis, "apis", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/apis.txt") {
+            System_Boundary(apis, "apis", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/apis.txt") {
             
             }
         
-            System_Boundary(apps, "apps", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/apps.txt") {
+            System_Boundary(apps, "apps", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/apps.txt") {
             
                 Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form")
             
@@ -22,15 +22,15 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
             
             }
         
-            System_Boundary(python_packages, "python_packages", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/python_packages.txt") {
+            System_Boundary(python_packages, "python_packages", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/python_packages.txt") {
             
             }
         
-            System_Boundary(reports, "reports", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/reports.txt") {
+            System_Boundary(reports, "reports", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/reports.txt") {
             
             }
         
-            System_Boundary(tabs_plugins, "tabs_plugins", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/tabs_plugins.txt") {
+            System_Boundary(tabs_plugins, "tabs_plugins", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/tabs_plugins.txt") {
             
                 Container(tabs_plugins1, "eol_completion", $link="https://github.com/eol-virtuallabx/eol_completion")
             
@@ -38,7 +38,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
             
             }
         
-            System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/requirements/xblocks.txt") {
+            System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/xblocks.txt") {
             
                 Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-virtuallabx/eol_list_grade")
             
@@ -52,7 +52,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
         
     }
 
-    System_Boundary(theme, "Themes", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/themes/") {
+    System_Boundary(theme, "Themes", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/themes/") {
         
             Container(theme1, "jcpp-theme", $link="https://github.com/eol-virtuallabx/jcpp-theme.git")
         
@@ -64,7 +64,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
         
     }
 
-    System_Boundary(dockerfile, "edx-platform base", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/main/Dockerfile") {
+    System_Boundary(dockerfile, "edx-platform base", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/Dockerfile") {
             Container(dk, "koa", $link="https://ghcr.io/eol-virtuallabx/edx-platform:koa")
     }
 }

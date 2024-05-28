@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Trigger argoCD repository workflow
         run: |
-            curl --fail-with-body --silent -X POST -H "Authorization: Bearer ${{ secrets.WEBHOOK_SECRET }}" -H "Accept: application/vnd.github+json" -H "Content-Type: application/json" https://api.github.com/repos/eol-virtuallabx/edx-argocd/dispatches --data '{"event_type": "update-images", "client_payload": {"flavour": "virtuallabx"}}'
+            curl --fail-with-body --silent -X POST -H "Authorization: Bearer ${{ secrets.WEBHOOK_SECRET }}" -H "Accept: application/vnd.github+json" -H "Content-Type: application/json" https://api.github.com/repos/eol-virtuallabx/edx-argocd/dispatches --data '{"event_type": "update-images-v2", "client_payload": {"flavour": "virtuallabx"}}'

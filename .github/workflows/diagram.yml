@@ -1,9 +1,10 @@
-name: Diagram generation
+name: Generate Diagram
 
 on:
+  workflow_call:
   push:
     branches:
-      - 'main'
+      - 'vlabx-release/**'
     paths:
       - 'Dockerfile'
       - 'requirements/**.txt'

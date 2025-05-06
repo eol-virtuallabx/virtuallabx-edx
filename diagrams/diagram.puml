@@ -16,7 +16,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
             
                 Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form")
             
-                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-virtuallabx/eol_duplicate_xblock")
+                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-uchile/eol_duplicate_xblock")
             
                 Container(apps3, "eol_certificate_virtual", $link="https://github.com/eol-virtuallabx/eol_certificate_virtual")
             
@@ -42,11 +42,9 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
             
                 Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-uchile/eol_list_grade")
             
-                Container(xblocks2, "course-program-xblock", $link="https://github.com/eol-virtuallabx/course-program-xblock")
+                Container(xblocks2, "edx_xblock_scorm", $link="https://github.com/eol-virtuallabx/edx_xblock_scorm")
             
-                Container(xblocks3, "edx_xblock_scorm", $link="https://github.com/eol-virtuallabx/edx_xblock_scorm")
-            
-                Container(xblocks4, "norteamericano-zoom-xblock", $link="https://github.com/eol-virtuallabx/norteamericano-zoom-xblock")
+                Container(xblocks3, "norteamericano-zoom-xblock", $link="https://github.com/eol-virtuallabx/norteamericano-zoom-xblock")
             
             }
         

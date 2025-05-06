@@ -40,7 +40,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
         
             System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/xblocks.txt") {
             
-                Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-virtuallabx/eol_list_grade")
+                Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-uchile/eol_list_grade")
             
                 Container(xblocks2, "course-program-xblock", $link="https://github.com/eol-virtuallabx/course-program-xblock")
             

@@ -42,7 +42,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
             
                 Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-uchile/eol_list_grade")
             
-                Container(xblocks2, "edx_xblock_scorm", $link="https://github.com/eol-virtuallabx/edx_xblock_scorm")
+                Container(xblocks2, "edx_xblock_scorm", $link="https://github.com/eol-uchile/edx_xblock_scorm")
             
                 Container(xblocks3, "norteamericano-zoom-xblock", $link="https://github.com/eol-virtuallabx/norteamericano-zoom-xblock")
             

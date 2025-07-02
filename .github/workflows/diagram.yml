@@ -1,4 +1,4 @@
-name: Generate Diagram
+name: Generate Diagram 
 
 on:
   workflow_call:

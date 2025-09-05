@@ -34,10 +34,10 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Build OpenedX
-        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:${{ env.RELEASE-NAME }} --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:${{ env.RELEASE-NAME }}-${{ env.TS }} --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:${GITHUB_SHA} --target base
+        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-uchile/edx-virtuallabx:${{ env.RELEASE-NAME }} --tag ghcr.io/eol-uchile/edx-virtuallabx:${{ env.RELEASE-NAME }}-${{ env.TS }} --tag ghcr.io/eol-uchile/edx-virtuallabx:${GITHUB_SHA} --target base
 
       - name: Build Static files for OpenedX S3
-        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${{ env.RELEASE-NAME }} --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${{ env.RELEASE-NAME }}-${{ env.TS }} --tag ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${GITHUB_SHA} --target s3
+        run: docker build . --file ./Dockerfile --tag ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${{ env.RELEASE-NAME }} --tag ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${{ env.RELEASE-NAME }}-${{ env.TS }} --tag ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${GITHUB_SHA} --target s3
 
       - name: Login to GitHub Container Registry
         if: ${{ github.event_name == 'merge_group' }}
@@ -50,12 +50,12 @@ jobs:
       - name: Push
         if: ${{ github.event_name == 'merge_group' }}
         run: |
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:${{ env.RELEASE-NAME }}
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:${{ env.RELEASE-NAME }}-${{ env.TS }}
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:${GITHUB_SHA}
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${{ env.RELEASE-NAME }}
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${{ env.RELEASE-NAME }}-${{ env.TS }}
-          docker push ghcr.io/eol-virtuallabx/virtuallabx-edx:s3-static-${GITHUB_SHA}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:${{ env.RELEASE-NAME }}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:${{ env.RELEASE-NAME }}-${{ env.TS }}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:${GITHUB_SHA}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${{ env.RELEASE-NAME }}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${{ env.RELEASE-NAME }}-${{ env.TS }}
+          docker push ghcr.io/eol-uchile/edx-virtuallabx:s3-static-${GITHUB_SHA}
 
   webhook:
       needs: [ variables, build ]

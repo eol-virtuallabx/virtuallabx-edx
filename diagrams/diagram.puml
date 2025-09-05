@@ -5,52 +5,52 @@
 
 skinparam svgLinkTarget foo
 
-System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/eol-virtuallabx/virtuallabx-edx") {
-    System_Boundary(c2, "requirements", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/") {
+System_Boundary(c1, "edx-platform: edx-virtuallabx", $link="https://github.com/eol-uchile/edx-virtuallabx") {
+    System_Boundary(c2, "requirements", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/") {
         
-            System_Boundary(apis, "apis", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/apis.txt") {
+            System_Boundary(apis, "apis", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/apis.txt") {
             
             }
         
-            System_Boundary(apps, "apps", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/apps.txt") {
+            System_Boundary(apps, "apps", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/apps.txt") {
             
-                Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form")
+                Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form/commit/bcc9233281392e916c789a6e244c933b928bf42b")
             
-                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-uchile/eol_duplicate_xblock")
+                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-uchile/eol_duplicate_xblock/commit/bdd3f406521cb028c142eb29e6c3c9c6433bba49")
             
-                Container(apps3, "eol_certificate_virtual", $link="https://github.com/eol-virtuallabx/eol_certificate_virtual")
-            
-            }
-        
-            System_Boundary(python_packages, "python_packages", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/python_packages.txt") {
+                Container(apps3, "eol_certificate_virtual", $link="https://github.com/eol-virtuallabx/eol_certificate_virtual/commit/34ae1221e2887948fcb8e01f9536dce184537a6c")
             
             }
         
-            System_Boundary(reports, "reports", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/reports.txt") {
+            System_Boundary(python_packages, "python_packages", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/python_packages.txt") {
             
             }
         
-            System_Boundary(tabs_plugins, "tabs_plugins", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/tabs_plugins.txt") {
-            
-                Container(tabs_plugins1, "eol_completion", $link="https://github.com/eol-virtuallabx/eol_completion")
-            
-                Container(tabs_plugins2, "eol_welcome_mail", $link="https://github.com/eol-uchile/eol_welcome_mail")
+            System_Boundary(reports, "reports", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/reports.txt") {
             
             }
         
-            System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/requirements/xblocks.txt") {
+            System_Boundary(tabs_plugins, "tabs_plugins", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/tabs_plugins.txt") {
             
-                Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-uchile/eol_list_grade")
+                Container(tabs_plugins1, "eol_completion", $link="https://github.com/eol-virtuallabx/eol_completion/commit/398c4ae918f0601a72911f910caaa8cb89e2cb5c")
             
-                Container(xblocks2, "edx_xblock_scorm", $link="https://github.com/eol-uchile/edx_xblock_scorm")
+                Container(tabs_plugins2, "eol_welcome_mail", $link="https://github.com/eol-uchile/eol_welcome_mail/commit/d45ed6908eac47bc615c5206572ecdea4d86adc5")
             
-                Container(xblocks3, "norteamericano-zoom-xblock", $link="https://github.com/eol-virtuallabx/norteamericano-zoom-xblock")
+            }
+        
+            System_Boundary(xblocks, "xblocks", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/requirements/xblocks.txt") {
+            
+                Container(xblocks1, "eol_list_grade", $link="https://github.com/eol-uchile/eol_list_grade/commit/0d7688919bad8b229bff2948f31fedd76f1029d2")
+            
+                Container(xblocks2, "edx_xblock_scorm", $link="https://github.com/eol-uchile/edx_xblock_scorm/commit/af72761ad08d5570e85d35d3ed7908618e707dac")
+            
+                Container(xblocks3, "eolzoom-xblock", $link="https://github.com/eol-uchile/eol-zoom-xblock/releases/tag/1.1.2")
             
             }
         
     }
 
-    System_Boundary(theme, "Themes", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/themes/") {
+    System_Boundary(theme, "Themes", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/themes/") {
         
             Container(theme1, "jcpp-theme", $link="https://github.com/eol-virtuallabx/jcpp-theme.git")
         
@@ -60,7 +60,7 @@ System_Boundary(c1, "edx-platform: virtuallabx-edx", $link="https://github.com/e
         
     }
 
-    System_Boundary(dockerfile, "edx-platform base", $link="https://github.com/eol-virtuallabx/virtuallabx-edx/blob/vlabx-release/koa/Dockerfile") {
+    System_Boundary(dockerfile, "edx-platform base", $link="https://github.com/eol-uchile/edx-virtuallabx/blob/vlabx-release/koa/Dockerfile") {
             Container(dk, "koa", $link="https://ghcr.io/eol-virtuallabx/edx-platform:koa")
     }
 }

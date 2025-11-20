@@ -16,7 +16,7 @@ System_Boundary(c1, "edx-platform: edx-virtuallabx", $link="https://github.com/e
             
                 Container(apps1, "eol_custom_reg_form", $link="https://github.com/eol-virtuallabx/eol_custom_reg_form/commit/bcc9233281392e916c789a6e244c933b928bf42b")
             
-                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-uchile/eol_duplicate_xblock/commit/bdd3f406521cb028c142eb29e6c3c9c6433bba49")
+                Container(apps2, "eol_duplicate_xblock", $link="https://github.com/eol-uchile/eol_duplicate_xblock/releases/tag/1.0.0")
             
                 Container(apps3, "eol_certificate_virtual", $link="https://github.com/eol-virtuallabx/eol_certificate_virtual/commit/34ae1221e2887948fcb8e01f9536dce184537a6c")
             

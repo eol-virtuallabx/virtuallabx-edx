@@ -1,9 +1,9 @@
 [submodule "themes/virtual-labx-cla"]
 	path = themes/virtual-labx-cla
-	url = https://github.com/eol-virtuallabx/virtual-labx-cla-theme.git
+	url = https://github.com/eol-uchile/virtual-labx-cla-theme
 [submodule "themes/virtual-labx"]
 	path = themes/virtual-labx
-	url = https://github.com/eol-virtuallabx/virtual-labx-theme.git
+	url = https://github.com/eol-uchile/virtual-labx-cla-old-theme
 [submodule "themes/jcpp-theme"]
 	path = themes/jcpp-theme
-	url = https://github.com/eol-virtuallabx/jcpp-theme.git
+	url = https://github.com/eol-uchile/jcpp-edx-theme

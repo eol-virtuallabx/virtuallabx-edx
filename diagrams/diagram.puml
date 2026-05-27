@@ -52,11 +52,9 @@ System_Boundary(c1, "edx-platform: edx-cla", $link="https://github.com/eol-uchil
 
     System_Boundary(theme, "Themes", $link="https://github.com/eol-uchile/edx-cla/blob/vlabx-release/koa/themes/") {
         
-            Container(theme1, "jcpp-theme", $link="https://github.com/eol-uchile/jcpp-edx-theme")
+            Container(theme1, "virtual-labx", $link="https://github.com/eol-uchile/virtual-labx-cla-old-theme")
         
-            Container(theme2, "virtual-labx", $link="https://github.com/eol-uchile/virtual-labx-cla-old-theme")
-        
-            Container(theme3, "virtual-labx-cla", $link="https://github.com/eol-uchile/virtual-labx-cla-theme")
+            Container(theme2, "virtual-labx-cla", $link="https://github.com/eol-uchile/virtual-labx-cla-theme")
         
     }
 

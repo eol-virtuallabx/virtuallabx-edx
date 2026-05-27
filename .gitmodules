@@ -4,6 +4,3 @@
 [submodule "themes/virtual-labx"]
 	path = themes/virtual-labx
 	url = https://github.com/eol-uchile/virtual-labx-cla-old-theme
-[submodule "themes/jcpp-theme"]
-	path = themes/jcpp-theme
-	url = https://github.com/eol-uchile/jcpp-edx-theme

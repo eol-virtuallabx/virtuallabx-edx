@@ -1,6 +1,3 @@
 [submodule "themes/virtual-labx-cla"]
 	path = themes/virtual-labx-cla
 	url = https://github.com/eol-uchile/virtual-labx-cla-theme
-[submodule "themes/virtual-labx"]
-	path = themes/virtual-labx
-	url = https://github.com/eol-uchile/virtual-labx-cla-old-theme
